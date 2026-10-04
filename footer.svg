@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 130" width="1200" height="130" role="img" aria-label="Code, learn, build, debug, repeat">
+  <defs>
+    <linearGradient id="band" x1="0" x2="1">
+      <stop offset="0" stop-color="#8b5cf6"/>
+      <stop offset=".5" stop-color="#ec4899"/>
+      <stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+    <clipPath id="clip"><rect y="62" width="1200" height="60" rx="16"/></clipPath>
+  </defs>
+
+  <!-- Peeking cat -->
+  <g transform="translate(540 0)">
+    <path d="M28 62V34L22 8l24 14q14-6 28 0L98 8l-6 26v28Z" fill="#8b5cf6">
+      <animateTransform attributeName="transform" type="translate" values="0 6;0 0;0 0;0 6" keyTimes="0;0.15;0.85;1" dur="6s" repeatCount="indefinite"/>
+    </path>
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 6;0 0;0 0;0 6" keyTimes="0;0.15;0.85;1" dur="6s" repeatCount="indefinite"/>
+      <path d="m28 17 10 7-7 6Z" fill="#ec4899"/>
+      <path d="m92 17-10 7 7 6Z" fill="#ec4899"/>
+      <circle cx="46" cy="42" r="8" fill="#fff"/>
+      <circle cx="74" cy="42" r="8" fill="#fff"/>
+      <circle cx="46" cy="42" r="4" fill="#17142a">
+        <animate attributeName="cx" values="43;49;49;43;43" keyTimes="0;0.3;0.5;0.8;1" dur="5s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="74" cy="42" r="4" fill="#17142a">
+        <animate attributeName="cx" values="71;77;77;71;71" keyTimes="0;0.3;0.5;0.8;1" dur="5s" repeatCount="indefinite"/>
+      </circle>
+      <path d="M57 50h6l-3 4Z" fill="#ec4899"/>
+      <path d="M36 52H22M36 56l-13 3M84 52h14M84 56l13 3" stroke="#fff" stroke-width="1.2" stroke-linecap="round" opacity=".7"/>
+    </g>
+  </g>
+
+  <!-- Marquee band -->
+  <g clip-path="url(#clip)">
+    <rect y="62" width="1200" height="60" fill="url(#band)"/>
+    <g font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="800" letter-spacing="4" fill="#fff">
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="-1200 0" dur="18s" repeatCount="indefinite"/>
+      <text x="10" y="101" textLength="1180" lengthAdjust="spacing">CODE ✦ LEARN ✦ BUILD ✦ DEBUG ✦ REPEAT ✦ CODE ✦ LEARN ✦ BUILD ✦ DEBUG ✦ REPEAT ✦</text>
+      <text x="1210" y="101" textLength="1180" lengthAdjust="spacing">CODE ✦ LEARN ✦ BUILD ✦ DEBUG ✦ REPEAT ✦ CODE ✦ LEARN ✦ BUILD ✦ DEBUG ✦ REPEAT ✦</text>
+    </g>
+  </g>
+
+  <!-- Paws resting on the band -->
+  <ellipse cx="576" cy="63" rx="9" ry="5" fill="#fff"/>
+  <ellipse cx="624" cy="63" rx="9" ry="5" fill="#fff"/>
+</svg>
